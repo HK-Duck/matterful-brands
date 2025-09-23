@@ -280,4 +280,31 @@ svg * {
     --color-light: #FFFFFF;
     --color-dark: #000000;
     --color-dark-grey: #888888;
+    --font-familly-base: 'Montserrat', sans-serif;
+    --font-familly-accent: 'PlayfairDisplay', sans-serif;
+}
+
+body {
+    font-family: var(--font-familly-base);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-dark);
+    background-color: var(--color-ligft-grey);
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+
+.shadow-text {
+    color: var(--color-dark-grey);
 }
