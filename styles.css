@@ -337,19 +337,52 @@ h6 {
 
 .header {
     display: flex;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    align-content: center;
 }
 
 .header-items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
     max-width: 770px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .header-items-logo {
-    position: relative;
-    margin-right: 35px;
-    margin-left: 35px;
+    margin-bottom: 18px;
+}
+
+.header-items-text {
+    font-size: 18px;
+}
+
+.banner {
+    background: url(./images/loncaro-background.jpg) center/contain no-repeat;
+    background-size: 100%;
+}
+
+.banner-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.banner-loncaro-list {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-flow: column wrap;
+    width: 567px;
+    height: 203px;
+}
+
+.banner-shadtext {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
 }
