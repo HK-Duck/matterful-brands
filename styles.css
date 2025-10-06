@@ -237,6 +237,8 @@ label {
                                 --border: 2px solid var(--color-light);
                                 --container-width: 1200px;
                                 --container-padding-x: 15px;
+                                --border: 1px solid var(--color-ligft-grey);
+                                --border-radius: 15px;
                             }
                             
                             body {
@@ -278,16 +280,35 @@ label {
                                 font-weight: 700;
                                 font-size: 36px;
                             }
+                            /* p {
+                                letter-spacing: 2px;
+                            } */
                             
-                            p {
+                            .text {
                                 letter-spacing: 2px;
                             }
                             
                             .shadow-text {
                                 color: var(--color-dark-grey);
-                                letter-spacing: normal;
                                 /* Делаем текст в верхнем регистре */
                                 text-transform: uppercase;
+                            }
+                            
+                            .great-block {
+                                width: 670px;
+                            }
+                            
+                            .medium-block {
+                                width: 570px;
+                            }
+                            
+                            .small-block {
+                                width: 470px;
+                            }
+                            
+                            .image-product {
+                                position: static;
+                                z-index: -1;
                             }
                             
                             .header {
@@ -347,8 +368,25 @@ label {
                             .banner-image {
                                 margin-top: 15px;
                             }
+                            /* .banner-text {} */
                             
-                            .banner-text {}
+                            .assortment-title {}
+                            
+                            .assortment-body {}
+                            
+                            .assortment-product {
+                                display: block;
+                                height: 612px;
+                                text-align: center;
+                                border: var(--border);
+                                border-radius: var(--border-radius);
+                                background-color: var(--color-light);
+                            }
+                            /* .product-list {
+                                position: relative;
+                                z-index: -2px;
+                                
+                            } */
                             
                             @media (max-width: 1850px) {
                                 .banner-image {
