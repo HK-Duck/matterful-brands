@@ -279,10 +279,14 @@ label {
                                 font-family: var(--font-familly-accent);
                                 font-weight: 700;
                                 font-size: 36px;
+                                margin: 1px;
                             }
-                            /* p {
-                                letter-spacing: 2px;
-                            } */
+                            
+                            h3 {
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                                font-size: 30px;
+                            }
                             
                             .text {
                                 letter-spacing: 2px;
@@ -292,6 +296,7 @@ label {
                                 color: var(--color-dark-grey);
                                 /* Делаем текст в верхнем регистре */
                                 text-transform: uppercase;
+                                font-weight: 700;
                             }
                             
                             .great-block {
@@ -307,8 +312,7 @@ label {
                             }
                             
                             .image-product {
-                                position: static;
-                                z-index: -1;
+                                border-radius: 15px 15px 0px 0px;
                             }
                             
                             .header {
@@ -361,32 +365,19 @@ label {
                             
                             .banner-shadtext {
                                 text-transform: uppercase;
-                                font-weight: 700;
                                 font-size: 16px;
                             }
                             
                             .banner-image {
                                 margin-top: 15px;
                             }
-                            /* .banner-text {} */
                             
-                            .assortment-title {}
-                            
-                            .assortment-body {}
-                            
-                            .assortment-product {
-                                display: block;
-                                height: 612px;
-                                text-align: center;
-                                border: var(--border);
-                                border-radius: var(--border-radius);
-                                background-color: var(--color-light);
+                            .product {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                margin-top: 30px;
                             }
-                            /* .product-list {
-                                position: relative;
-                                z-index: -2px;
-                                
-                            } */
                             
                             @media (max-width: 1850px) {
                                 .banner-image {
