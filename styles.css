@@ -226,7 +226,7 @@ label {
                             /* Объявляем глобальные переменные */
                             
                              :root {
-                                --color-ligft-grey: #F4F4F4;
+                                --color-light-grey: #F4F4F4;
                                 --color-light: #FFFFFF;
                                 --color-dark: #000000;
                                 --color-dark-grey: #888888;
@@ -237,7 +237,7 @@ label {
                                 --border: 2px solid var(--color-light);
                                 --container-width: 1200px;
                                 --container-padding-x: 15px;
-                                --border: 1px solid var(--color-ligft-grey);
+                                --border: 1px solid var(--color-light-grey);
                                 --border-radius: 15px;
                             }
                             
@@ -246,7 +246,7 @@ label {
                                 font-size: 16px;
                                 line-height: 1.6;
                                 color: var(--color-dark);
-                                background-color: var(--color-ligft-grey);
+                                background-color: var(--color-light-grey);
                             }
                             
                             .container {
@@ -377,6 +377,41 @@ label {
                                 flex-direction: column;
                                 align-items: center;
                                 margin-top: 30px;
+                            }
+                            
+                            .product-assortment {
+                                flex-wrap: wrap;
+                            }
+                            
+                            .product-list {
+                                justify-content: space-between;
+                                flex-wrap: nowrap;
+                                flex-direction: row;
+                            }
+                            
+                            .product-item {
+                                display: block;
+                                height: auto;
+                                border: var(--border);
+                                border-radius: var(--border-radius);
+                                background-color: var(--color-light);
+                            }
+                            
+                            .product-info {
+                                display: flex;
+                                align-items: center;
+                                flex-flow: column;
+                                text-align: center;
+                            }
+                            
+                            .info-shadtext {
+                                margin-top: 15px;
+                                font-size: 14px;
+                            }
+                            
+                            .info-text {
+                                margin-bottom: 25px;
+                                font-size: 16px;
                             }
                             
                             @media (max-width: 1850px) {
