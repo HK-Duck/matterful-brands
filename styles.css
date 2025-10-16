@@ -232,9 +232,6 @@ label {
                                 --color-dark-grey: #888888;
                                 --font-familly-base: 'Montserrat', sans-serif;
                                 --font-familly-accent: 'PlayfairDisplay', sans-serif;
-                                /* Временное значение радиуса*/
-                                --border-radius: 10px;
-                                --border: 2px solid var(--color-light);
                                 --container-width: 1200px;
                                 --container-padding-x: 15px;
                                 --border: 1px solid var(--color-light-grey);
@@ -251,7 +248,7 @@ label {
                             
                             .container {
                                 /* Складываем ширину контентной сетки со значением горизонтальных отступов умноженное на 2 */
-                                /* Т.о. получим реальное ограничение контентной сетки в 1300px */
+                                /* Т.о. получим реальное ограничение контентной сетки в 1200px */
                                 max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
                                 margin-inline: auto;
                                 padding-inline: var(--container-padding-x);
@@ -273,7 +270,6 @@ label {
                             h1,
                             h2,
                             h3,
-                            h4,
                             h5,
                             h6 {
                                 font-family: var(--font-familly-accent);
@@ -286,10 +282,21 @@ label {
                                 margin-top: 0px;
                                 margin-bottom: 0px;
                                 font-size: 30px;
+                                letter-spacing: 1px;
+                            }
+                            
+                            h4 {
+                                font-family: var(--font-familly-base);
+                                font-size: 20px;
+                                margin: 4px;
                             }
                             
                             .text {
                                 letter-spacing: 2px;
+                            }
+                            
+                            .textmb {
+                                margin-bottom: 50px;
                             }
                             
                             .shadow-text {
@@ -315,11 +322,30 @@ label {
                                 border-radius: 15px 15px 0px 0px;
                             }
                             
+                            .image-product-s {
+                                border-radius: 15px;
+                            }
+                            
+                            .assortment-line {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 25px;
+                                margin-bottom: 25px;
+                            }
+                            
+                            .two {
+                                justify-content: center;
+                                flex-wrap: wrap;
+                            }
+                            
+                            .bottom-wrapper {
+                                margin: 0 15px;
+                            }
+                            
                             .header {
                                 display: flex;
                                 align-items: flex-start;
                                 justify-content: center;
-                                /* align-content: center; */
                             }
                             
                             .header-items {
@@ -351,7 +377,7 @@ label {
                                 justify-content: center;
                                 align-items: center;
                                 column-gap: 15px;
-                                margin: 10px 20px;
+                                margin: 10px 20px 65px;
                             }
                             
                             .banner-loncaro-list {
@@ -376,15 +402,17 @@ label {
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
-                                margin-top: 30px;
                             }
                             
-                            .assortment-body {
+                            .wrapper {
                                 display: flex;
-                                /* flex-direction: row; */
+                                flex-direction: column;
                                 justify-content: center;
-                                flex-wrap: wrap;
-                                gap: 25px;
+                            }
+                            
+                            .assortment-title {
+                                text-align: center;
+                                margin-bottom: 35px;
                             }
                             
                             .product-item {
@@ -402,14 +430,58 @@ label {
                                 text-align: center;
                             }
                             
+                            .indent {
+                                margin-top: 15px;
+                            }
+                            
                             .info-shadtext {
                                 margin-top: 15px;
                                 font-size: 14px;
                             }
                             
                             .info-text {
-                                margin-bottom: 25px;
                                 font-size: 16px;
+                            }
+                            
+                            .one {
+                                justify-content: flex-end;
+                                margin-right: 13px;
+                            }
+                            
+                            .three {
+                                justify-content: flex-start;
+                                margin-left: 13px;
+                            }
+                            
+                            .aboutUs {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: var(--color-light);
+                                border: var(--border);
+                                border-radius: var(--border-radius);
+                            }
+                            
+                            .aboutUs-info {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                text-align: center;
+                                margin: 28px 10px 28px;
+                                width: 380px;
+                            }
+                            
+                            .person {
+                                font-size: 14px;
+                            }
+                            
+                            .person-photo {
+                                align-self: center;
+                            }
+                            
+                            .person-job {
+                                margin-bottom: 10px;
                             }
                             
                             @media (max-width: 1850px) {
