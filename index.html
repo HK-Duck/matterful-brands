@@ -37,7 +37,7 @@
                 <h2 class="assortment-title">Food & Beverage Spotlight</h2>
                 <div class="assortment-line one ">
                     <div class="product-item great-block">
-                        <img class="image-product" src="./images/assortment/1caulikids.jpg" alt="" width="670" height="380" loading="lazy">
+                        <img src="./images/assortment/1caulikids.jpg" alt="" width="670" height="380" loading="lazy">
                         <ul class="product-info">
                             <li class="info-shadtext shadow-text">Branding, Packaging Design, Content, G2M Marketing</li>
                             <li class="info-title">
@@ -49,13 +49,13 @@
                 </div>
                 <div class="assortment-line two">
                     <div class="product-item great-block">
-                        <img class="image-product" src="./images/assortment/2amayu.jpg" alt="" width="670" height="380" loading="lazy">
+                        <img src="./images/assortment/2amayu.jpg" alt="" width="670" height="380" loading="lazy">
                         <ul class="product-info">
                             <li class="info-shadtext shadow-text">Content, Website, Social Media, Amazon Design</li>
                             <li class="info-title">
                                 <h3>Amayu</h3>
                             </li>
-                            <li class="info-text">Sustainably harvested from the Peruvian Amazon, Amayu is a superfruit <br> juice packed with vitamins and antioxidants.</li>
+                            <li class="info-text textmb">Sustainably harvested from the Peruvian Amazon, Amayu is a superfruit <br> juice packed with vitamins and antioxidants.</li>
                         </ul>
                     </div>
                     <div class="product-item small-block">
@@ -72,10 +72,10 @@
                         </div>
                     </div>
                     <div class="product-item small-block">
-                        <img src="./images/assortment/4choco-quinoa.jpg" alt="" class="image-product-s" width="470" height="608" loading="lazy">
+                        <img src="./images/assortment/4choco-quinoa.jpg" alt="" width="470" height="608" loading="lazy">
                     </div>
                     <div class="product-item great-block">
-                        <img class="image-product" src="./images/assortment/5mezcla.jpg " alt="" width="670" height="380" loading="lazy">
+                        <img src="./images/assortment/5mezcla.jpg " alt="" width="670" height="380" loading="lazy">
                         <ul class="product-info">
                             <li class="info-shadtext shadow-text">Branding, Packaging, Web & E-comm, Amazon, G2M</li>
                             <li class="info-title">
@@ -87,7 +87,7 @@
                 </div>
                 <div class="assortment-line three">
                     <div class="product-item great-block">
-                        <img class="image-product" src="./images/assortment/6toum.jpg " alt="" width="670" height="380" loading="lazy">
+                        <img src="./images/assortment/6toum.jpg " alt="" width="670" height="380" loading="lazy">
                         <ul class="product-info">
                             <li class="info-shadtext shadow-text">Branding, Packaging Design, Website</li>
                             <li class="info-title">
@@ -99,20 +99,30 @@
                 </div>
                 <div class="assortment-line two">
                     <div class="product-item small-block">
-                        <img src="./images/assortment/7after.jpg" alt="" class="image-product-s" width="470" height="584" loading="lazy">
+                        <div class="slider">
+                            <picture>
+                                <img src="./images/assortment/7before.jpg" class="slider__img slider__img--before" alt="Before" width="470" height="584">
+                            </picture>
+                            <picture>
+                                <img src="./images/assortment/7after.jpg" class="slider__img slider__img--after" alt="After" width="470" height="584">
+                            </picture>
+                            <label for="slider-range" class="visually-hidden">Показать картинку до или после</label>
+                            <input type="range" class="slider__range-js" min="0" max="100" value="50" step="1" id="slider-range">
+                            <div class="slider__range-visible"></div>
+                        </div>
                     </div>
                     <div class="product-item great-block">
-                        <img class="image-product" src="./images/assortment/8two-good.jpg" alt="" width="670" height="380" loading="lazy">
+                        <img src="./images/assortment/8two-good.jpg" alt="" width="670" height="380" loading="lazy">
                         <ul class="product-info">
                             <li class="info-shadtext shadow-text">Branding, Packaging Design, Illustration</li>
                             <li class="info-title">
                                 <h3>Two Good</h3>
                             </li>
-                            <li class="info-text">Matterful is proud to have worked on this innovative new line of low-sugar<br> yogurts from Danone’s Light and Fit portfolio. Full case study coming soon!</li>
+                            <li class="info-text textmb">Matterful is proud to have worked on this innovative new line of low-sugar<br> yogurts from Danone’s Light and Fit portfolio. Full case study coming soon!</li>
                         </ul>
                     </div>
                     <div class="product-item great-block">
-                        <img class="image-product" src="./images/assortment/9red-jacket.jpg" alt="" width="670" height="380" loading="lazy">
+                        <img src="./images/assortment/9red-jacket.jpg" alt="" width="670" height="380" loading="lazy">
                         <ul class="product-info">
                             <li class="info-shadtext shadow-text">Packaging Design</li>
                             <li class="info-title">
@@ -156,7 +166,7 @@
 
                     </div>
                     <div class="product-item medium-block">
-                        <img class="image-product" src="./images/assortment/11love-beets.jpg" alt="" width="570" height="322" loading="lazy">
+                        <img src="./images/assortment/11love-beets.jpg" alt="" width="570" height="322" loading="lazy">
                         <ul class="product-info indent">
                             <li class="info-shadtext shadow-text">Packaging Design</li>
                             <li class="info-title">
@@ -168,7 +178,7 @@
                         </ul>
                     </div>
                     <div class="product-item medium-block">
-                        <img src="./images/assortment/12purpose-snackery.jpg" alt="" class="image-product-s" width="570" height="650" loading="lazy">
+                        <img src="./images/assortment/12purpose-snackery.jpg" alt="" width="570" height="650" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -176,6 +186,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./swiper.js"></script>
+    <script src="./slider.js"></script>
 </body>
 
 </html>
