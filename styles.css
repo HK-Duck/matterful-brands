@@ -590,6 +590,27 @@ label {
                                     color: var(--color-dark-grey) !important;
                                 }
                                 
+                                .communication {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    margin-top: 70px;
+                                }
+                                
+                                .com-text {
+                                    width: 680px;
+                                    height: 52px;
+                                    flex-wrap: wrap;
+                                    font-size: 16px;
+                                }
+                                
+                                .communication-galery {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                }
+                                
                                 @media (max-width: 1850px) {
                                     .banner-image {
                                         max-width: 50%;
