@@ -608,7 +608,36 @@ label {
                                 
                                 .communication-galery {
                                     display: flex;
+                                    justify-content: space-evenly;
                                     flex-wrap: wrap;
+                                    align-items: center;
+                                    margin-bottom: 30px;
+                                }
+                                
+                                .line-one {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: flex-end;
+                                    gap: 40px;
+                                    padding-top: 25px;
+                                    width: 1980px;
+                                }
+                                
+                                .line-two {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: flex-start;
+                                    gap: 40px;
+                                    padding-top: 40px;
+                                    width: 1980px;
+                                }
+                                
+                                @media (max-width: 2032px) {
+                                    .line-one,
+                                    .line-two {
+                                        width: 90%;
+                                        height: auto;
+                                    }
                                 }
                                 
                                 @media (max-width: 1850px) {
