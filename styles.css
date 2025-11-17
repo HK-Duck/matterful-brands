@@ -116,7 +116,7 @@
                                 video {
                                     display: block;
                                     max-width: 100%;
-                                    /* height: auto; */
+                                    height: auto;
                                 }
                                 /**
    Наследуем свойства шрифт для полей ввода
@@ -590,55 +590,56 @@ label {
                                     color: var(--color-dark-grey) !important;
                                 }
                                 
+                                .socialMedia {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-content: center;
+                                }
+                                
                                 .communication {
                                     display: flex;
                                     flex-direction: column;
-                                    justify-content: center;
                                     align-items: center;
                                     text-align: center;
                                     margin-top: 70px;
                                 }
                                 
                                 .com-text {
-                                    width: 680px;
-                                    height: 52px;
+                                    width: 100%;
+                                    max-width: 680px;
+                                    height: auto;
                                     flex-wrap: wrap;
                                     font-size: 16px;
                                 }
                                 
                                 .communication-galery {
-                                    display: flex;
-                                    justify-content: space-evenly;
-                                    flex-wrap: wrap;
-                                    align-items: center;
+                                    width: 100%;
+                                    max-width: 1890px;
                                     margin-bottom: 30px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
                                 }
                                 
                                 .line-one {
                                     display: flex;
+                                    flex-direction: row;
                                     justify-content: center;
                                     align-items: flex-end;
-                                    gap: 40px;
-                                    padding-top: 25px;
-                                    width: 1980px;
+                                    gap: 30px;
+                                    padding-top: 40px;
                                 }
                                 
                                 .line-two {
                                     display: flex;
+                                    flex-direction: row;
                                     justify-content: center;
                                     align-items: flex-start;
-                                    gap: 40px;
-                                    padding-top: 40px;
-                                    width: 1980px;
+                                    gap: 30px;
+                                    padding-top: 30px;
                                 }
                                 
-                                @media (max-width: 2032px) {
-                                    .line-one,
-                                    .line-two {
-                                        width: 90%;
-                                        height: auto;
-                                    }
-                                }
+                                @media (max-width: 1850px) {}
                                 
                                 @media (max-width: 1850px) {
                                     .banner-image {
