@@ -621,13 +621,18 @@ label {
                                     align-items: center;
                                 }
                                 
+                                .container-wide {
+                                    max-width: 1890px;
+                                    margin-inline: auto;
+                                    padding: 40px 15px 70px;
+                                }
+                                
                                 .line-one {
                                     display: flex;
                                     flex-direction: row;
                                     justify-content: center;
                                     align-items: flex-end;
                                     gap: 30px;
-                                    padding-top: 40px;
                                 }
                                 
                                 .line-two {
@@ -639,12 +644,22 @@ label {
                                     padding-top: 30px;
                                 }
                                 
-                                @media (max-width: 1850px) {}
-                                
-                                @media (max-width: 1850px) {
+                                @media (max-width: 1857px) {
+                                    .container-wide {
+                                        padding: 35px 10px 65px;
+                                    }
                                     .banner-image {
                                         max-width: 50%;
                                         height: auto;
+                                    }
+                                    .galery-img {
+                                        max-height: 30%;
+                                        width: auto;
+                                    }
+                                    .line-one,
+                                    .line-two {
+                                        gap: 25px;
+                                        flex-wrap: wrap;
                                     }
                                 }
                                 
