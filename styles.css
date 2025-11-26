@@ -624,7 +624,7 @@ label {
                                 .container-wide {
                                     max-width: 1890px;
                                     margin-inline: auto;
-                                    padding: 40px 15px 70px;
+                                    padding: 40px 15px 60px;
                                 }
                                 
                                 .line-one {
@@ -644,9 +644,44 @@ label {
                                     padding-top: 30px;
                                 }
                                 
+                                .brand-service {
+                                    background-color: var(--color-dark);
+                                    color: var(--color-light);
+                                    text-align: center;
+                                }
+                                
+                                .cover-title {
+                                    padding-top: 35px;
+                                }
+                                
+                                .cover-text {
+                                    padding-bottom: 40px;
+                                }
+                                
+                                .service-list {
+                                    display: grid;
+                                    grid-template-columns: repeat(4, 1fr);
+                                    gap: 20px;
+                                    padding-bottom: 50px;
+                                }
+                                
+                                .service-item {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                                
+                                .service-image {
+                                    padding-bottom: 15px;
+                                }
+                                
+                                .service-text {
+                                    font-size: 24px;
+                                }
+                                
                                 @media (max-width: 1857px) {
                                     .container-wide {
-                                        padding: 35px 10px 65px;
+                                        padding: 35px 10px 55px;
                                     }
                                     .banner-image {
                                         max-width: 50%;
@@ -705,6 +740,9 @@ label {
                                     }
                                     .header-items-text {
                                         font-size: 14px;
+                                    }
+                                    .service-list {
+                                        grid-template-columns: repeat(2, 1fr);
                                     }
                                 }
                                 
