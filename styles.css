@@ -656,6 +656,9 @@ label {
                                 
                                 .cover-text {
                                     padding-bottom: 40px;
+                                    font-size: 18px;
+                                    /* width: 520px;
+                                    height: 52px; */
                                 }
                                 
                                 .service-list {
@@ -671,12 +674,48 @@ label {
                                     align-items: center;
                                 }
                                 
-                                .service-image {
+                                .service-icons {
                                     padding-bottom: 15px;
                                 }
                                 
                                 .service-text {
                                     font-size: 24px;
+                                }
+                                
+                                .our-clients {
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-wrap: wrap;
+                                }
+                                
+                                .clients-text {
+                                    width: 770px;
+                                    height: auto;
+                                    text-align: center;
+                                    padding-top: 50px;
+                                    text-align: center;
+                                }
+                                
+                                .clients-logo {
+                                    padding-top: 25px;
+                                }
+                                
+                                .logo-list {
+                                    display: grid;
+                                    grid-template-columns: repeat(6, 1fr);
+                                    gap: 20px;
+                                    padding-bottom: 20px;
+                                }
+                                
+                                .black-rectangle {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    padding-bottom: 40px;
+                                }
+                                
+                                .black-ts {
+                                    font-size: 12px;
                                 }
                                 
                                 @media (max-width: 1857px) {
@@ -702,6 +741,9 @@ label {
                                     .header-items-logo {
                                         max-width: 50%;
                                         height: auto;
+                                    }
+                                    .logo-list {
+                                        grid-template-columns: repeat(4, 1fr);
                                     }
                                 }
                                 
@@ -749,6 +791,12 @@ label {
                                 @media(max-width: 700px) {
                                     .great-block {
                                         width: auto;
+                                    }
+                                    .cover-text {
+                                        font-size: 14px;
+                                    }
+                                    .logo-list {
+                                        grid-template-columns: repeat(2, 1fr);
                                     }
                                 }
                                 
