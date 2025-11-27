@@ -718,6 +718,104 @@ label {
                                     font-size: 12px;
                                 }
                                 
+                                .banner-list {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    max-width: 100%;
+                                    height: auto;
+                                    padding-bottom: 70px;
+                                }
+                                
+                                .collaboration-info {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    text-align: center;
+                                }
+                                
+                                .collaboration-text {
+                                    width: 756px;
+                                    height: auto;
+                                    font-size: 20px;
+                                    padding-bottom: 15px;
+                                }
+                                
+                                .collaboration-botton {
+                                    display: inline-flex;
+                                    align-items: center;
+                                    padding-inline: 26px;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    line-height: 2;
+                                    width: 135px;
+                                    height: 46px;
+                                    border: 2px solid var(--color-dark);
+                                    margin-bottom: 70px;
+                                }
+                                
+                                .collaboration-botton:hover {
+                                    background-color: var(--color-dark-grey);
+                                    transition-duration: 1s;
+                                }
+                                
+                                .subscription {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: var(--color-dark);
+                                    color: var(--color-light);
+                                    padding: 60px 0;
+                                }
+                                
+                                .subscription-info {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    width: 522px;
+                                    height: auto;
+                                    margin-right: 10px;
+                                }
+                                
+                                .subcription-text {
+                                    font-size: 18px;
+                                }
+                                
+                                .subscription-form {
+                                    width: 648px;
+                                    height: auto;
+                                }
+                                
+                                .subscription-email {
+                                    width: 502px;
+                                    height: 52px;
+                                    /* Взято из др проекта */
+                                    /* width: 100%;
+                                    height: var(--input-height); */
+                                    /* padding-inline: 25px; */
+                                    color: var(--color-light);
+                                    background-color: transparent;
+                                    border-style: none;
+                                    border-bottom: 2px solid var(--color-dark-grey);
+                                }
+                                
+                                .subscription-submit {
+                                    width: 116px;
+                                    height: 56px;
+                                    text-transform: uppercase;
+                                    border: 2px solid var(--color-light);
+                                    background-color: transparent;
+                                    color: var(--color-light);
+                                    margin-left: 20px;
+                                }
+                                
+                                .subscription-submit:hover {
+                                    color: var(--color-dark-grey);
+                                    border: 2px solid var(--color-dark-grey);
+                                    transition-duration: 1s;
+                                }
+                                
                                 @media (max-width: 1857px) {
                                     .container-wide {
                                         padding: 35px 10px 55px;
@@ -785,6 +883,16 @@ label {
                                     }
                                     .service-list {
                                         grid-template-columns: repeat(2, 1fr);
+                                    }
+                                    .banner-list {
+                                        padding-bottom: 50px;
+                                    }
+                                    .collaboration-text {
+                                        width: 70%;
+                                        font-size: 16px;
+                                    }
+                                    .collaboration-botton {
+                                        margin-bottom: 50px;
                                     }
                                 }
                                 
