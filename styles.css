@@ -783,7 +783,8 @@ label {
                                 }
                                 
                                 .subscription-form {
-                                    width: 648px;
+                                    max-width: 648px;
+                                    width: 100%;
                                     height: auto;
                                 }
                                 
@@ -813,7 +814,109 @@ label {
                                 .subscription-submit:hover {
                                     color: var(--color-dark-grey);
                                     border: 2px solid var(--color-dark-grey);
+                                    background-color: var(--color-light-grey);
                                     transition-duration: 1s;
+                                }
+                                
+                                .footer-main {
+                                    /* display: grid;
+                                    grid-template-columns: repeat(2, 1fr); */
+                                    display: flex;
+                                    flex-direction: row;
+                                    margin-top: 60px;
+                                    margin-bottom: 45px;
+                                }
+                                
+                                .footer-header {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    max-width: 600px;
+                                    width: 100%;
+                                    height: auto;
+                                }
+                                
+                                .footer-body {
+                                    display: flex;
+                                    gap: 10px;
+                                }
+                                
+                                .footer-location {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                }
+                                
+                                .location-image {
+                                    padding-right: 15px;
+                                }
+                                
+                                .LosAngeles-list {
+                                    margin-bottom: 20px;
+                                }
+                                
+                                .LosAngeles-list,
+                                .Manhattan-list {
+                                    max-width: 200px;
+                                    width: 100%;
+                                    height: auto;
+                                }
+                                
+                                .list-title {
+                                    margin: 0;
+                                    font-weight: 700;
+                                    font-size: 20px;
+                                }
+                                
+                                .text-location {
+                                    font-family: var(--font-familly-base);
+                                    font-weight: 100;
+                                    font-size: 20px;
+                                    margin-bottom: 8px;
+                                }
+                                
+                                .list-text {
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                }
+                                
+                                .footer-connection {
+                                    max-width: 300px;
+                                    width: 100%;
+                                    height: auto;
+                                }
+                                
+                                .connection-title {
+                                    font-family: var(--font-familly-accent);
+                                }
+                                
+                                .footer-email {
+                                    text-decoration: none;
+                                    color: var(--color-dark);
+                                    margin: 10px 0 15px;
+                                }
+                                
+                                .footer-email:hover {
+                                    transition-duration: 1s;
+                                    color: var(--color-dark-grey);
+                                }
+                                
+                                .footer-socialMedia {
+                                    display: flex;
+                                    gap: 10px;
+                                    padding-left: 5px;
+                                }
+                                
+                                .footer-extra {
+                                    background-color: var(--color-dark);
+                                    color: var(--color-light);
+                                    text-align: center;
+                                }
+                                
+                                .extra-text {
+                                    padding: 10px 0;
+                                    font-weight: 400;
+                                    font-size: 12px;
                                 }
                                 
                                 @media (max-width: 1857px) {
@@ -842,6 +945,12 @@ label {
                                     }
                                     .logo-list {
                                         grid-template-columns: repeat(4, 1fr);
+                                    }
+                                    .subscription {
+                                        flex-direction: column;
+                                    }
+                                    .subscription-info {
+                                        margin: 0 0 25px;
                                     }
                                 }
                                 
